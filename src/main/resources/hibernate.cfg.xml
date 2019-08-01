@@ -23,10 +23,12 @@
         <!-- Drop and re-create the database schema on startup -->
 
 
-        <mapping class="com.hibernate.Product" />
-        <mapping class="com.hibernate.Receipt" />
-        <mapping class="com.hibernate.ReceiptProduct" />
-        <mapping class="com.hibernate.Store" />
+        <mapping class="hibernate.Product" />
+        <mapping class="hibernate.Receipt" />
+        <mapping class="hibernate.ReceiptProduct" />
+        <mapping class="hibernate.Store" />
+        <mapping class="hibernate.AppStore" />
+
 
 
 

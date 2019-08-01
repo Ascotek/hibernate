@@ -1,4 +1,4 @@
-package com;
+package hibernate;
 
 
 import javax.persistence.*;

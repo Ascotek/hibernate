@@ -27,6 +27,8 @@
         <mapping class="hibernate.Receipt" />
         <mapping class="hibernate.ReceiptProduct" />
         <mapping class="hibernate.Store" />
+        <mapping class="hibernate.AppStore" />
+
 
 
 

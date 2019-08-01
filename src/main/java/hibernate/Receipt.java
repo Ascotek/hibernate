@@ -1,4 +1,4 @@
-package com;
+package hibernate;
 
 
 import javax.persistence.*;
@@ -21,19 +21,8 @@ public class Receipt {
     private Long creationDate;
 
     @OneToMany (cascade = CascadeType.MERGE)
-    @JoinColumn(name = "store")
     private List<Store> storeList;
 
-    @ManyToMany(cascade = CascadeType.MERGE)
-    private Set<ReceiptProduct> receiptProducts;
-
-    public Set<ReceiptProduct> getReceiptProducts() {
-        return receiptProducts;
-    }
-
-    public void setReceiptProducts(Set<ReceiptProduct> receiptProducts) {
-        this.receiptProducts = receiptProducts;
-    }
 
     public String getStore() {
         return store;

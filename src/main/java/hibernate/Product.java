@@ -1,4 +1,4 @@
-package com;
+package hibernate;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -16,17 +16,6 @@ public class Product {
     private String name;
     private double price;
     private Long creationDate;
-
-    @ManyToMany(cascade = CascadeType.PERSIST)
-    private Set<ReceiptProduct> receiptProducts;
-
-    public Set<ReceiptProduct> getReceiptProducts() {
-        return receiptProducts;
-    }
-
-    public void setReceiptProducts(Set<ReceiptProduct> receiptProducts) {
-        this.receiptProducts = receiptProducts;
-    }
 
     public Product(Long id, String name, double price, Long creationDate) {
         this.id = id;

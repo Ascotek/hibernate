@@ -1,4 +1,4 @@
-package com;
+package hibernate;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
