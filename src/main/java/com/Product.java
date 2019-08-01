@@ -1,7 +1,6 @@
-package hibernate;
+package com;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
