@@ -7,7 +7,6 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "receipt")
 public class Receipt {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
@@ -21,8 +20,16 @@ public class Receipt {
     private Long creationDate;
 
     @OneToMany (cascade = CascadeType.MERGE)
+    @JoinColumn(name = "store")
     private List<Store> storeList;
 
+    public List<Store> getStoreList() {
+        return storeList;
+    }
+
+    public void setStoreList(List<Store> storeList) {
+        this.storeList = storeList;
+    }
 
     public String getStore() {
         return store;
@@ -32,13 +39,7 @@ public class Receipt {
         this.store = store;
     }
 
-    public List<Store> getStoreList() {
-        return storeList;
-    }
 
-    public void setStoreList(List<Store> storeList) {
-        this.storeList = storeList;
-    }
 
     public Long getId() {
         return id;

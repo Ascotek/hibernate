@@ -1,11 +1,11 @@
 package hibernate;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
@@ -16,6 +16,8 @@ public class Product {
     private String name;
     private double price;
     private Long creationDate;
+
+
 
     public Product(Long id, String name, double price, Long creationDate) {
         this.id = id;
