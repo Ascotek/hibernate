@@ -15,12 +15,16 @@ public class Product {
 
     private String name;
     private double price;
-    private Long creationDate;
+    private String creationDate;
 
     @ManyToMany (mappedBy = "products")
     private List<Receipt> receipts;
 
-    public Product(Long id, String name, double price, Long creationDate) {
+    public Product(){
+
+    }
+
+    public Product(Long id, String name, double price, String creationDate) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -51,11 +55,11 @@ public class Product {
         this.price = price;
     }
 
-    public Long getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Long creationDate) {
+    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 

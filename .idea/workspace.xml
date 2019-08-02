@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66600fff-a21f-45ab-b86d-999abf919a89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/AppStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/AppStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/ReceiptProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/AppStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/AppStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/Receipt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/Receipt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/ReceiptProduct.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/pl/com/dziendobry" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pl/com/dziendobry" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +30,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="289">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/ProductRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="-127">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -40,26 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/AppStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Receipt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -67,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/SessionStoreBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="323">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -97,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.xml" />
         <option value="$PROJECT_DIR$/src/main/java/store_hibernate/ReceiptProduct.java" />
         <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernate/AppStore.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/SessionStoreBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hibernate/Product.java" />
@@ -109,13 +119,17 @@
         <option value="$PROJECT_DIR$/src/main/java/hibernate/SessionStoreBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/hibernate/ReceiptProduct.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernate/Receipt.java" />
         <option value="$PROJECT_DIR$/src/main/java/hibernate/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernate/Receipt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernate/ReceiptRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernate/StoreRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernate/AppStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernate/ProductRepository.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="183" />
+    <option name="x" value="181" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -125,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,12 +184,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564675848792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564753713275" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -252,7 +266,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19530201" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.20067114" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.18993288" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -263,11 +277,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17280453" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.12464589" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -375,27 +389,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/AppStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/ReceiptProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/ReceiptProduct.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -404,9 +398,11 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/StoreRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/ReceiptRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/SessionStoreBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="323">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -414,25 +410,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Store.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/AppStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
           <folding>
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

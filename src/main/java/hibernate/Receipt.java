@@ -17,7 +17,7 @@ public class Receipt {
     @Column(name= "store_id")
     private String store;
 
-    private Long creationDate;
+    private String creationDate;
 
     @ManyToMany(cascade = CascadeType.MERGE)
     private Set<Product> products;
@@ -50,8 +50,6 @@ public class Receipt {
         this.store = store;
     }
 
-
-
     public Long getId() {
         return id;
     }
@@ -60,11 +58,11 @@ public class Receipt {
         this.id = id;
     }
 
-    public Long getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Long creationDate) {
+    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 
