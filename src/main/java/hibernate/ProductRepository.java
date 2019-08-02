@@ -94,24 +94,6 @@ public class ProductRepository {
             product1.setCreationDate("06.05.2019");
             session.persist(product1);
 
-
-//            Book book = new Book();
-//
-//            Library library = new Library();
-//            library.setAddress("ul.Kocia 9");
-//            library.setName("Piesek");
-//            session.persist(library);
-//            book.setLibrary(library);
-//
-//
-//            receipt.setStore();
-
-//            List<Store> storeList = new LinkedList<>();
-//            storeList.add(store);
-//            storeList.add(store1);
-
-
-
             transaction.commit();
         }
     }
