@@ -19,6 +19,17 @@ public class Receipt {
 
     private Long creationDate;
 
+    @ManyToMany(cascade = CascadeType.MERGE)
+    private Set<Product> products;
+
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Set<Product> products) {
+        this.products = products;
+    }
+
     @OneToMany (cascade = CascadeType.MERGE)
     @JoinColumn(name = "store")
     private List<Store> storeList;

@@ -17,7 +17,8 @@ public class Product {
     private double price;
     private Long creationDate;
 
-
+    @ManyToMany (mappedBy = "products")
+    private List<Receipt> receipts;
 
     public Product(Long id, String name, double price, Long creationDate) {
         this.id = id;
