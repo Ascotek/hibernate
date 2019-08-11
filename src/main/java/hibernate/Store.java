@@ -3,16 +3,16 @@ package hibernate;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
+
 
 @Entity
-
-public class Store {
+@Table(name = "STORE")
+public class Store{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
-
-    @Column(name = "store_id")
+    @Column(name = "STORE_ID")
     private Long id;
-
     private String name;
     private String city;
     private String street;
@@ -46,6 +46,16 @@ public class Store {
     }
 
     public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public Store() {
+    }
+
+    public Store(Long id, String name, String city, String street) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
         this.street = street;
     }
 

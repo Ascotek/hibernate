@@ -1,26 +1,43 @@
 package hibernate;
 
-
 import javax.persistence.*;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+
 @Entity
-public class Receipt {
+@Table(name = "RECEIPT")
+public class Receipt{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @Column(name = "receipt_id")
     private Long id;
-
-    @Column(name= "store_id")
-    private String store;
-
     private String creationDate;
 
+    @ManyToOne (cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(name = "STORE_ID")
+    private Store store;
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
+    }
+
+    public Receipt(Store store) {
+        this.store = store;
+    }
+
     @ManyToMany(cascade = CascadeType.MERGE)
-    private Set<Product> products;
+    @JoinTable(
+            name = "Receipt_Product",
+            joinColumns = { @JoinColumn(name = "receipt_id") },
+            inverseJoinColumns = { @JoinColumn(name = "product_id") }
+    )
+
+   private Set<Product> products;
 
     public Set<Product> getProducts() {
         return products;
@@ -28,26 +45,6 @@ public class Receipt {
 
     public void setProducts(Set<Product> products) {
         this.products = products;
-    }
-
-    @OneToMany (cascade = CascadeType.MERGE)
-    @JoinColumn(name = "store")
-    private List<Store> storeList;
-
-    public List<Store> getStoreList() {
-        return storeList;
-    }
-
-    public void setStoreList(List<Store> storeList) {
-        this.storeList = storeList;
-    }
-
-    public String getStore() {
-        return store;
-    }
-
-    public void setStore(String store) {
-        this.store = store;
     }
 
     public Long getId() {
@@ -64,6 +61,13 @@ public class Receipt {
 
     public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
+    }
+
+
+    public Receipt(Long id, String creationDate) {
+        this.id = id;
+        this.creationDate = creationDate;
+
     }
 
     @Override

@@ -17,8 +17,16 @@ public class Product {
     private double price;
     private String creationDate;
 
-    @ManyToMany (mappedBy = "products")
-    private List<Receipt> receipts;
+    @ManyToMany(mappedBy = "products")
+    private Set<Receipt>receipts;
+
+    public Set<Receipt> getReceipts() {
+        return receipts;
+    }
+
+    public void setReceipts(Set<Receipt> receipts) {
+        this.receipts = receipts;
+    }
 
     public Product(){
 
