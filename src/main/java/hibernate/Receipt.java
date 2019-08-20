@@ -1,6 +1,8 @@
 package hibernate;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -37,7 +39,7 @@ public class Receipt{
             inverseJoinColumns = { @JoinColumn(name = "product_id") }
     )
 
-   private Set<Product> products;
+   private Set<Product> products = new HashSet<>();
 
     public Set<Product> getProducts() {
         return products;
@@ -63,6 +65,8 @@ public class Receipt{
         this.creationDate = creationDate;
     }
 
+    public Receipt() {
+    }
 
     public Receipt(Long id, String creationDate) {
         this.id = id;

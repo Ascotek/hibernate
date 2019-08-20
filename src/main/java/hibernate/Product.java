@@ -18,13 +18,13 @@ public class Product {
     private String creationDate;
 
     @ManyToMany(mappedBy = "products")
-    private Set<Receipt>receipts;
+    private List<Receipt>receipts;
 
-    public Set<Receipt> getReceipts() {
+    public List<Receipt> getReceipts() {
         return receipts;
     }
 
-    public void setReceipts(Set<Receipt> receipts) {
+    public void setReceipts(List<Receipt> receipts) {
         this.receipts = receipts;
     }
 
